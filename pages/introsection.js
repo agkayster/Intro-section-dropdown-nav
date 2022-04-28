@@ -270,7 +270,8 @@ function Introsection() {
 						</div>
 
 						{/* Mobile menu items */}
-						<Disclosure.Panel className='fixed bottom-0 top-12 right-0 bg-white text-black w-8/12 z-20 shadow-2xl shadow-black'>
+
+						<Disclosure.Panel className='fixed bottom-0 top-12 right-0 bg-white text-black w-8/12 z-20 shadow-2xl shadow-black transition-right duration-1000 ease-in-out'>
 							<div className='px-2 pt-2 pb-3'>
 								<Menu as='div' className='ml-3 '>
 									<div>
@@ -474,7 +475,7 @@ function Introsection() {
 						</p>
 						<button
 							className='bg-black hover:bg-white hover:text-black hover:border hover:border-black 
-						text-white md:mt-10 ml-2 py-2 px-4 rounded-xl mt-6'>
+						text-white md:text-base text-sm w-fit md:mt-10 -ml-1 py-2 px-5 rounded-xl mt-6'>
 							Learn more
 						</button>
 						{/*Desktop view for client images */}
@@ -514,7 +515,7 @@ function Introsection() {
 						</div>
 						{/*Mobile view for client images*/}
 						<div className='mt-8 flex md:hidden justify-evenly'>
-							<span className='ml-3'>
+							<span className='ml-3 mt-2'>
 								<Image
 									src='/client-databiz.svg'
 									alt='databiz'
@@ -532,7 +533,7 @@ function Introsection() {
 									layout='fixed'
 								/>
 							</span>
-							<span className='ml-2'>
+							<span className='ml-2 mt-2'>
 								<Image
 									src='/client-meet.svg'
 									alt='meet'
@@ -540,7 +541,7 @@ function Introsection() {
 									height={60}
 								/>
 							</span>
-							<span className='ml-2'>
+							<span className='ml-2 mt-2'>
 								<Image
 									src='/client-maker.svg'
 									alt='maker'
