@@ -1,16 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	padding: 0;
+	margin: 0;
+	font-family: 'Epilogue', sans-serif;
+	font-size: 18px;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+	color: inherit;
+	text-decoration: none;
 }
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*Mobile view styling*/
+/*.imageWrap {
+	position: absolute;
+	display: flex;
+	align-items: items-stretch;
+	right: 65px;
+	padding-left: 38px;
+}
+/*Make remote work*/
+/*.remote {
+	padding-right: 15px;
+}
+
+/*Laptop view styling*/
+@media only screen and (min-width: 600px) {
+	/*.imageWrap {
+		position: absolute;
+		right: 120px;
+	}*/
+	.remote {
+		padding-right: 625px;
+	}
+	.team {
+		width: 440px;
+	}
+}
+/*Desktop styling*/
+@media only screen and (min-width: 768px) {
+	.imageWrap {
+		position: absolute;
+		right: 125px;
+	}
+	.remote {
+		padding-right: 625px;
+	}
+	.team {
+		width: 440px;
+	}
 }
