@@ -477,7 +477,7 @@ function Introsection() {
 						text-white md:mt-10 ml-2 py-2 px-4 rounded-xl mt-6'>
 							Learn more
 						</button>
-						{/*Desktop view */}
+						{/*Desktop view for client images */}
 						<div className='md:pr-2 md:mt-24 mt-8 hidden md:flex'>
 							<span className='mt-2'>
 								<Image
@@ -512,7 +512,7 @@ function Introsection() {
 								/>
 							</span>
 						</div>
-						{/*Mobile view*/}
+						{/*Mobile view for client images*/}
 						<div className='mt-8 flex md:hidden justify-evenly'>
 							<span className='ml-3'>
 								<Image
@@ -550,7 +550,7 @@ function Introsection() {
 							</span>
 						</div>
 					</div>
-
+					{/*Desktop view for hero image */}
 					<div className='imageWrap hidden md:flex'>
 						<Image
 							src='/image-hero-desktop.png'
@@ -559,6 +559,7 @@ function Introsection() {
 							height={500}
 						/>
 					</div>
+					{/*Mobile view for hero image */}
 					<div className='imageWrap block md:hidden'>
 						<Image
 							src='/image-hero-mobile.png'
@@ -566,8 +567,6 @@ function Introsection() {
 							width={200}
 							height={200}
 							layout='responsive'
-							// layout='fill'
-							// objectFit='contain'
 						/>
 					</div>
 				</div>
